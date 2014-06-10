@@ -56,11 +56,11 @@ def table_1():
 
 def table_2():
     html = """
-            <H3 class="out_3 collapsible" id="section1"><span></span>Mapper</H3>
-            <div class="out_3">
+            <H3 class="out_3" id="section1"><span></span>Mapper</H3>
+            
                 <H4 class="out_4 collapsible" id="section1"><span></span></H4>
                     <div id="map"></div>
-            </div>
+            
            """
 
     return html
