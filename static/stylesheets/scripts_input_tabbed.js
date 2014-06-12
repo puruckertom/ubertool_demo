@@ -116,13 +116,18 @@ function uberNavTabs( modelTabs, subTabs ) {
 		var addTabText_li = 'li.'+modelTabs[i];
 		liTabArray.push(addTabText_li);
 	}
-
+	console.log('liTabArray = '+liTabArray);
 	// Setup tab defaults
 	var uptab_pool = modelTabs;
 	var curr_ind = 0;
 	$(".back, .submit, #metaDataToggle, #metaDataText").hide();
 
-	// Click handler
+	uberNavTabsClickListener( modelTabs, subTabs, tab_pool, liTabArray, uptab_pool, curr_ind );
+
+}
+
+// Click handler
+function uberNavTabsClickListener( modelTabs, subTabs, tab_pool, liTabArray, uptab_pool, curr_ind ) {
 	$('.input_nav ul li').click(function() {
 		// Check if "li" element has class (ignores the input buttons)
 		if ($(this).attr('class')) {

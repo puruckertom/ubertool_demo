@@ -3,7 +3,8 @@ from django.template.loader import render_to_string
 def geneecInputPage(request, model='', header=''):
     import geneec_parameters
 
-    html = render_to_string('04uberinput_start.html', {
+    html = render_to_string('04uberinput_jquery.html', { 'model': model })
+    html = html + render_to_string('04uberinput_start.html', {
             'model':model, 
             'model_attributes': header+' Inputs'})
     # html = html + render_to_string('geneec_ubertool_config_input.html', {})
