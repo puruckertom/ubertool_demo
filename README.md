@@ -39,4 +39,7 @@ Note: The bottle server requires MongoDB to be running before it will successful
 <b>GAE:</b> After starting the dev servers, go to localhost:8080 (or whichever port you chose) in your browser.  If using the GAE GUI, click "Browse".<br>
 
 
+Contact Info
+=============
 
+Questions regarding the use of the ubertool_demo code can be directed to Tom Purucker: purucker.tom@gmail.com
